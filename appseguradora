@@ -1,0 +1,20 @@
+import java.util.*;
+public class appseguradora {
+
+	public static void main(String[] args) {
+		Scanner entrada=new Scanner(System.in);
+        cliente c1=new cliente();
+        System.out.println("Digite seu nome");
+        c1.setNomeSegurado(entrada.nextLine());
+        System.out.println("Digite a sua idade:");
+        c1.setIdade(entrada.nextDouble());
+        System.out.println("Digite o valor do premio:");
+        c1.setValorPremio(entrada.nextDouble());
+        System.out.println("Escolha uma das opções para a cidade em que você mora");
+        System.out.println("1-Curitiba\n2-Rio de janeiro\n3-São Paulo\n4-Belo Horizonte\n5-Nenhuma das anteriores");
+        System.out.println("Escolha uma das opções");
+        c1.setCidade(entrada.nextInt());
+ System.out.println("valor do premio:"+c1.valorLiquido());
+	}
+
+}
